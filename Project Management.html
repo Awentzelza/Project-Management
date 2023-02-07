@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Project Management</h1>
+    <div id="tasks">
+      <h2>Tasks</h2>
+      <div id="task-input">
+        <form id="task-form">
+          <input type="text" id="task-name" placeholder="Task name">
+          <select id="task-status">
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="task-list">
+        </tbody>
+      </table>
+    </div>
+    <div id="sub-tasks">
+      <h2>Sub Tasks</h2>
+      <div id="sub-task-input">
+        <form id="sub-task-form">
+          <input type="text" id="sub-task-name" placeholder="Sub Task name">
+          <select id="sub-task-status">
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+          </select>
+          <select id="parent-task">
+          </select>
+          <button type="submit">Add Sub Task</button>
+        </form>
+      </div>
+      <table id="sub-task-table">
+        <thead>
+          <tr>
+            <th>Sub Task</th>
+            <th>Status</th>
+            <th>Parent Task</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="sub-task-list">
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
